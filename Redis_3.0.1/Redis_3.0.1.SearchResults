@@ -1,0 +1,39 @@
+---- sdsEncodedObject Matches (38 in 16 files) ----
+aof.c (src):    } else if (sdsEncodedObject(obj)) {
+bitops.c (src):    if (sdsEncodedObject(o)) {
+cluster.c (src):    redisAssertWithInfo(c,NULL,sdsEncodedObject(c->argv[3]));
+config.c (src):    redisAssertWithInfo(c,c->argv[2],sdsEncodedObject(c->argv[2]));
+config.c (src):    redisAssertWithInfo(c,c->argv[3],sdsEncodedObject(c->argv[3]));
+config.c (src):    redisAssertWithInfo(c,o,sdsEncodedObject(o));
+db.c (src):            if (sdsEncodedObject(kobj)) {
+debug.c (src):        if (val->type != REDIS_STRING || !sdsEncodedObject(val)) {
+debug.c (src):        if (c->argv[j]->type == REDIS_STRING && sdsEncodedObject(c->argv[j])) {
+debug.c (src):    if (o->type == REDIS_STRING && sdsEncodedObject(o)) {
+networking.c (src):    if (sdsEncodedObject(obj)) {
+networking.c (src):    if (sdsEncodedObject(obj)) {
+object.c (src):    if (!sdsEncodedObject(o)) return o;
+object.c (src):    if (sdsEncodedObject(o)) {
+object.c (src):    if (sdsEncodedObject(a)) {        
+object.c (src):    if (sdsEncodedObject(b)) {
+object.c (src):    if (sdsEncodedObject(o)) {
+object.c (src):        if (sdsEncodedObject(o)) {
+object.c (src):        if (sdsEncodedObject(o)) {
+object.c (src):        if (sdsEncodedObject(o)) {
+rdb.c (src):        redisAssertWithInfo(NULL,obj,sdsEncodedObject(obj));
+rdb.c (src):                sdsEncodedObject(ele) &&
+rdb.c (src):            if (sdsEncodedObject(ele) && sdslen(ele->ptr) > maxelelen)
+rdb.c (src):            redisAssert(sdsEncodedObject(field));
+rdb.c (src):            redisAssert(sdsEncodedObject(value));
+redis.c (src):    if (sdsEncodedObject(o)) {
+redis.h (src):#define sdsEncodedObject(objptr) (objptr->encoding == REDIS_ENCODING_RAW || objptr->encoding == REDIS_ENCODING_EMBSTR)
+slowlog.c (src):                sdsEncodedObject(argv[j]) &&
+sort.c (src):                if (sdsEncodedObject(byval)) {
+t_hash.c (src):        if (sdsEncodedObject(argv[i]) &&
+t_list.c (src):    if (sdsEncodedObject(value) &&
+t_list.c (src):        redisAssertWithInfo(NULL,o,sdsEncodedObject(o));
+t_zset.c (src):    redisAssertWithInfo(NULL,ele,sdsEncodedObject(ele));
+t_zset.c (src):            } else if (sdsEncodedObject(val->ele)) {
+t_zset.c (src):            } else if (sdsEncodedObject(val->ele)) {
+t_zset.c (src):                    if (sdsEncodedObject(tmp)) {
+t_zset.c (src):                    if (sdsEncodedObject(tmp)) {
+t_zset.c (src):    redisAssertWithInfo(c,ele,sdsEncodedObject(ele));
